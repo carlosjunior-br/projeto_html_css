@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promoções</title>
+    <link href="projeto_html_css_estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Cabeçalho -->
+      <div class="row">
+        <div id="cabecalho" class="header p-2 rounded d-flex justify-content-between align-items-center" style="min-height: 10vh;">
+          <h3 class="font-weight-bold" style="font-family: 'Helvetica', sans-serif;">Carlos Júnior Manutenção</h3>
+          <a href="https://infinityschool.com.br/" class="btn btn-dark ml-auto" target="_blank">Infinity School</a>
+        </div>
+      </div>
+      <!-- Fim Cabeçalho -->
+      <!-- Carrossel -->
+      <div class="row" style="min-height: 20vh;">
+        <div id="carrossel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <p class="d-block w-100 fs-4 d-flex justify-content-center text-center">Bem vindo à página de promoções!</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+              <p class="d-block w-100 fs-4 d-flex justify-content-center text-center">Aqui você encontra as promoções vigentes dos nossos serviços de suporte e manutenção.</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+              <p class="d-block w-100 fs-4 d-flex justify-content-center text-center">Não deixe de aproveitar para turbinar seu PC.</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+      <!-- Fim Carrossel -->
+      <!-- Cards -->
+      <div id="linha-cards" class="row">
+        <!-- linha 1 card 1 -->
+        <div class="col p-2 rounded d-flex justify-content-center align-items-center">
+          <div class="card bg-light" style="width: 18rem;">
+            <img src="formatacao.jpg" class="card-img-top" alt="Formatação">
+            <div class="card-body text-center">
+              <h5 class="card-title">Formatação</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">R$ 110,00</h6>
+              <p class="card-text">Formatação de PC<br>com opçao de backup de<br>todos os arquivos pessoais.</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!-- linha 1 card 2 -->
+        <div class="col p-2 rounded d-flex justify-content-center align-items-center">
+          <div class="card bg-light" style="width: 18rem;">
+            <img src="hd_ssd.jpg" class="card-img-top" alt="HD para SSD">
+            <div class="card-body text-center">
+              <h5 class="card-title">HD para SSD</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">R$ 70,00</h6>
+              <p class="card-text">Substituição de HD para SSD.<br>Valor somente da mão de obra,<br>SSD não incluído.</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!-- linha 1 card 3 -->
+        <div class="col p-2 rounded d-flex justify-content-center align-items-center">
+          <div class="card bg-light" style="width: 18rem;">
+            <img src="ram.jpg" class="card-img-top" alt="Memória RAM">
+            <div class="card-body text-center">
+              <h5 class="card-title">Upgrade de memória</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">R$ 40,00</h6>
+              <p class="card-text">Upgrade de memória RAM.<br>Valor somente da mão de obra,<br>memória não incluída.</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim Cards -->
+    </div>
+    <!-- Fim Container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Simulação de compra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Esta página é apenas uma simulação.<br>Nenhuma compra é realmente realizada.<br>Obrigado pela visita!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Modal -->
+  </body>
+</html>
