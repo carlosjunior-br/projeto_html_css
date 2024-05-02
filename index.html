@@ -16,7 +16,7 @@
       <div class="row">
         <div id="cabecalho" class="header p-2 rounded d-flex justify-content-between align-items-center" style="min-height: 10vh;">
           <h3 class="font-weight-bold" style="font-family: 'Helvetica', sans-serif;">Carlos Júnior Manutenção</h3>
-          <a href="https://infinityschool.com.br/" class="btn btn-dark ml-auto" target="_blank">Infinity School</a>
+          <a href="#titulo-formulario" class="btn btn-dark ml-auto">Entre em contato</a>
         </div>
       </div>
       <!-- Fim Cabeçalho -->
@@ -90,6 +90,30 @@
         </div>
       </div>
       <!-- Fim Cards -->
+      <!-- Formulário -->
+      <div class="container mt-5" style="max-width: 80vw;">
+        <h1 id="titulo-formulario" class="text-center">Formulário de Contato</h1>
+        <form action="#" method="post">
+            <div class="form-group" style="min-height: 12vh;">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="form-group" style="min-height: 17vh;">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
+                <small id="emailHelp" class="form-text text-muted">Nunca divulgaremos seu e-mail.</small>
+            </div>
+            <div class="form-group" style="min-height: 17vh;">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Número de telefone">
+                <small id="telefoneHelp" class="form-text text-muted">Nunca divulgaremos seu telefone.</small>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalForm">Enviar</button>
+            <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+        </form>
+      </div>
+      <!-- Fim Formulário -->
     </div>
     <!-- Fim Container -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -111,5 +135,23 @@
     </div>
   </div>
   <!-- Fim Modal -->
+  <!-- Modal Formulário -->
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Simulação de envio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Esta página é apenas uma simulação.<br>Nenhum envio é realmente realizado.<br>Obrigado pela visita!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Modal Formulário -->
   </body>
 </html>
